@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+<plugin id="com.lumapps.internal">
+    <feature extension="package.version" value="0.1"/>
+    <feature extension="dita.xsl.html5" file="xsl/topic.xsl"/>
+</plugin>

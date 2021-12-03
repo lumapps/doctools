@@ -1,0 +1,4 @@
+*[class ~= 'topic/image'][placement='break'], fig *[class ~= 'topic/image'] {
+    max-width: 600px;
+    max-height:250px;
+}
