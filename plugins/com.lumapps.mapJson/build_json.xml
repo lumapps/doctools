@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="com.lumapps.mapJson">
+
+    <target name="map2json">
+        <makeurl property="output.dir.uri" file="${output.dir}"/>
+
+        <xslt in="${dita.temp.dir}/${user.input.file}" out="${dita.output.dir}/ditaMap.json"
+            style="${dita.plugin.com.lumapps.mapJson.dir}/xsl/map-json.xsl">
+            <xmlcatalog refid="dita.catalog"/>
+        </xslt>
+    </target>
+
+</project>

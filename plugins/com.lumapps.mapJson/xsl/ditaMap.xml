@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns="http://www.w3.org/2005/xpath-functions">
+   <string key="title">Expand
+        LumApps</string>
+   <string key="language">en</string>
+   <map key="map">
+      <map key="expand-landing">
+         <string key="root">true</string>
+         <string key="title">Expand LumApps</string>
+         <string key="path">expand-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+      </map>
+      <map key="expand-l020380370874875542">
+         <string key="title">API</string>
+         <string key="path">expand-api-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l02226158809117995">
+         <string key="title">Enable API access (Google)</string>
+         <string key="path">knowledge_base/enable-api-access.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l020380370874875542</string>
+      </map>
+      <map key="expand-l018320005015322383">
+         <string key="title">Platform logs API</string>
+         <string key="path">analytics/platform_logs_api.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l020380370874875542</string>
+      </map>
+      <map key="expand-l9382342880942685">
+         <string key="title">Provisioning API</string>
+         <string key="path">installation/provisioning_API/provisioning_api.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l020380370874875542</string>
+      </map>
+      <map key="expand-l9374280521444237">
+         <string key="title">Creating a Batch provisioning
+                            provider</string>
+         <string key="path">installation/provisioning_API/creating_batch_provisioning_provider.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9390405240441132">
+         <string key="title">Setting up the Provisioning API
+                            request</string>
+         <string key="path">installation/provisioning_API/setting_up_the_provisioning_api_request.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9349197774238457">
+         <string key="title">Federation field</string>
+         <string key="path">installation/provisioning_API/federation_field.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9359051620169392">
+         <string key="title">Creating and updating users</string>
+         <string key="path">installation/provisioning_API/creating_and_updating_users.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l933844796157386">
+         <string key="title">Adding a user profile custom
+                            field</string>
+         <string key="path">installation/provisioning_API/adding_a_user_profile_custom_field.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9527464606856679">
+         <string key="title">Deleting users</string>
+         <string key="path">installation/provisioning_API/deleting_users.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9539110088231714">
+         <string key="title">Synchronizing groups</string>
+         <string key="path">installation/provisioning_API/synchronizing_groups.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9513131672315496">
+         <string key="title">Validating a data set</string>
+         <string key="path">installation/provisioning_API/validating_data_set.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9382342880942685</string>
+      </map>
+      <map key="expand-l9510444219149347">
+         <string key="title">Service providers</string>
+         <string key="path">knowledge_base/expand-service-providers-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l01993210728090422">
+         <string key="title">Slack</string>
+         <string key="path">expand/slack/slack.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9510444219149347</string>
+      </map>
+      <map key="expand-l9501486041928849">
+         <string key="title">Slack installation (Slack V1
+                            only)</string>
+         <string key="path">expand/slack/slack_integration.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l01993210728090422</string>
+      </map>
+      <map key="expand-l023694526812351846">
+         <string key="title">Migrate from Slack V1 to Slack
+                            V2</string>
+         <string key="path">expand/slack/migrate_from_slack_v1_to_slack_v2.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l01993210728090422</string>
+      </map>
+      <map key="expand-l9481778052043756">
+         <string key="title">Slack integrations</string>
+         <string key="path">expand/slack/slack_integrations.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l01993210728090422</string>
+      </map>
+      <map key="expand-l9650191038731043marketplace">
+         <string key="title">Marketplace</string>
+         <string key="path">expand/marketplace/expand-marketplace-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l9606296268373831marketplace-box">
+         <string key="title">Box extensions</string>
+         <string key="path">expand/marketplace/box.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9619733385192965marketplace-bugherd">
+         <string key="title">BugHerd extensions</string>
+         <string key="path">expand/marketplace/bugherd-bugherd.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9573151161669603marketplace-button">
+         <string key="title">Button extensions</string>
+         <string key="path">expand/marketplace/button.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-coutdownmarketplace-countdown">
+         <string key="title">Countdown extensions</string>
+         <string key="path">expand/marketplace/countdown.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l6014157339667398marketplace-custom_built">
+         <string key="title">Custom built extensions</string>
+         <string key="path">expand/marketplace/custom_built_extension.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l47380087235366175marketplace-form_builder">
+         <string key="title">Form builder extensions</string>
+         <string key="path">expand/marketplace/form_builder.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9595546455709234marketplace-freshdesk">
+         <string key="title">Freshdesk extensions</string>
+         <string key="path">expand/marketplace/freshdesk-freshdesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9593754820265135marketplace-jira">
+         <string key="title">Jira extensions</string>
+         <string key="path">expand/marketplace/jira-jira.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9549860049907922marketplace-jira">
+         <string key="title">Tickets count</string>
+         <string key="path">expand/marketplace/jira_tickets_count-jira.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9593754820265135marketplace-jira</string>
+      </map>
+      <map key="expand-l9584796643044637marketplace-jira">
+         <string key="title">Ticket form</string>
+         <string key="path">expand/marketplace/ticket_form-jira.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9593754820265135marketplace-jira</string>
+      </map>
+      <map key="expand-l9555234807228609marketplace-jira">
+         <string key="title">Tickets list</string>
+         <string key="path">expand/marketplace/jira_tickets-list-jira.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9593754820265135marketplace-jira</string>
+      </map>
+      <map key="expand-l9571359526225504marketplace-landesk">
+         <string key="title">Landesk extensions</string>
+         <string key="path">expand/marketplace/landesk-landesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l03809432000906232marketplace-TFL">
+         <string key="title">London: TFL network extensions</string>
+         <string key="path">expand/marketplace/london_tlf_network_extension.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l4694113953179405marketplace-lucca">
+         <string key="title">Lucca extensions</string>
+         <string key="path">expand/marketplace/lucca-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l46869474114030074marketplace-lucca">
+         <string key="title">Birthdays</string>
+         <string key="path">expand/marketplace/lucca_birthdays-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4694113953179405marketplace-lucca</string>
+      </map>
+      <map key="expand-install-extensionmarketplace-lucca">
+         <string key="title">Install the extension</string>
+         <string key="path">expand/marketplace/install_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46869474114030074marketplace-lucca</string>
+      </map>
+      <map key="expand-lucca-configurationmarketplace-lucca">
+         <string key="title">Configure the connector</string>
+         <string key="path">expand/marketplace/lucca_configuration-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46869474114030074marketplace-lucca</string>
+      </map>
+      <map key="expand-activate-the-extensionmarketplace-lucca">
+         <string key="title">Activate the extension</string>
+         <string key="path">expand/marketplace/activate_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46869474114030074marketplace-lucca</string>
+      </map>
+      <map key="expand-update-the-extensionmarketplace-lucca">
+         <string key="title">Update the extension</string>
+         <string key="path">expand/marketplace/update_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46869474114030074marketplace-lucca</string>
+      </map>
+      <map key="expand-uninstall-the-extensionmarketplace-lucca">
+         <string key="title">Uninstall the extension</string>
+         <string key="path">expand/marketplace/uninstall_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46869474114030074marketplace-lucca</string>
+      </map>
+      <map key="expand-l46421566743121334marketplace-lucca">
+         <string key="title">Out of office</string>
+         <string key="path">expand/marketplace/lucca_out_office-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4694113953179405marketplace-lucca</string>
+      </map>
+      <map key="expand-install-extensionmarketplace-lucca">
+         <string key="title">Install the extension</string>
+         <string key="path">expand/marketplace/install_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46421566743121334marketplace-lucca</string>
+      </map>
+      <map key="expand-lucca-configurationmarketplace-lucca">
+         <string key="title">Configure the connector</string>
+         <string key="path">expand/marketplace/lucca_configuration-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46421566743121334marketplace-lucca</string>
+      </map>
+      <map key="expand-activate-the-extensionmarketplace-lucca">
+         <string key="title">Activate the extension</string>
+         <string key="path">expand/marketplace/activate_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46421566743121334marketplace-lucca</string>
+      </map>
+      <map key="expand-update-the-extensionmarketplace-lucca">
+         <string key="title">Update the extension</string>
+         <string key="path">expand/marketplace/update_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46421566743121334marketplace-lucca</string>
+      </map>
+      <map key="expand-uninstall-the-extensionmarketplace-lucca">
+         <string key="title">Uninstall the extension</string>
+         <string key="path">expand/marketplace/uninstall_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46421566743121334marketplace-lucca</string>
+      </map>
+      <map key="expand-l46573855755869786marketplace-lucca">
+         <string key="title">Remote</string>
+         <string key="path">expand/marketplace/lucca_remotes-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4694113953179405marketplace-lucca</string>
+      </map>
+      <map key="expand-install-extensionmarketplace-lucca">
+         <string key="title">Install the extension</string>
+         <string key="path">expand/marketplace/install_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46573855755869786marketplace-lucca</string>
+      </map>
+      <map key="expand-lucca-configurationmarketplace-lucca">
+         <string key="title">Configure the connector</string>
+         <string key="path">expand/marketplace/lucca_configuration-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46573855755869786marketplace-lucca</string>
+      </map>
+      <map key="expand-activate-the-extensionmarketplace-lucca">
+         <string key="title">Activate the extension</string>
+         <string key="path">expand/marketplace/activate_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46573855755869786marketplace-lucca</string>
+      </map>
+      <map key="expand-update-the-extensionmarketplace-lucca">
+         <string key="title">Update the extension</string>
+         <string key="path">expand/marketplace/update_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46573855755869786marketplace-lucca</string>
+      </map>
+      <map key="expand-uninstall-the-extensionmarketplace-lucca">
+         <string key="title">Uninstall the extension</string>
+         <string key="path">expand/marketplace/uninstall_the_extension-lucca.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l46573855755869786marketplace-lucca</string>
+      </map>
+      <map key="expand-l9562401349005006marketplace-mantis">
+         <string key="title">Mantis extensions</string>
+         <string key="path">expand/marketplace/mantis-mantis.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9756792900620124marketplace-monday">
+         <string key="title">Monday.com extensions</string>
+         <string key="path">expand/marketplace/monday_com-monday.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l3132690671525389marketplace-MTA">
+         <string key="title">New York: MTA network extensions</string>
+         <string key="path">expand/marketplace/new_york_mta_network_extension.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l300941754670881marketplace-RATP">
+         <string key="title">Paris: RATP network extensions</string>
+         <string key="path">expand/marketplace/paris_ratp_network_extension.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9755001116164412marketplace-redmine">
+         <string key="title">Redmine extensions</string>
+         <string key="path">expand/marketplace/redmine-redmine.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9746042938943915marketplace-salesforce">
+         <string key="title">Salesforce extensions</string>
+         <string key="path">expand/marketplace/salesforce-saleforce.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l48177362027758186marketplace-salesforce">
+         <string key="title">Cases list</string>
+         <string key="path">expand/marketplace/salesforce_cases_list-saleforce.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9746042938943915marketplace-salesforce</string>
+      </map>
+      <map key="expand-l9772021652883357marketplace-salesforce">
+         <string key="title">Tickets count</string>
+         <string key="path">expand/marketplace/salesforce_tickets_count-saleforce.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9746042938943915marketplace-salesforce</string>
+      </map>
+      <map key="expand-l9584796643044637marketplace-salesforce">
+         <string key="title">Ticket form</string>
+         <string key="path">expand/marketplace/ticket_form-saleforce.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9746042938943915marketplace-salesforce</string>
+      </map>
+      <map key="expand-l9763063624674472marketplace-servicenow">
+         <string key="title">ServiceNow extensions</string>
+         <string key="path">expand/marketplace/servicenow-servicenow.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9720960340749747marketplace-servicenow">
+         <string key="title">Tickets count</string>
+         <string key="path">expand/marketplace/servicenow_tickets_count-servicenow.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9763063624674472marketplace-servicenow</string>
+      </map>
+      <map key="expand-l9584796643044637marketplace-servicenow">
+         <string key="title">Ticket form</string>
+         <string key="path">expand/marketplace/ticket_form-servicenow.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9763063624674472marketplace-servicenow</string>
+      </map>
+      <map key="expand-l9728126733514533marketplace-servicenow">
+         <string key="title">Tickets list</string>
+         <string key="path">expand/marketplace/servicenow_tickets_list-servicenow.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9763063624674472marketplace-servicenow</string>
+      </map>
+      <map key="expand-l9718272887583598marketplace-zendesk">
+         <string key="title">Zendesk extensions</string>
+         <string key="path">expand/marketplace/zendesk-zendesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9720960340749747marketplace-zendesk">
+         <string key="title">Tickets count</string>
+         <string key="path">expand/marketplace/servicenow_tickets_count-zendesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9718272887583598marketplace-zendesk</string>
+      </map>
+      <map key="expand-l9584796643044637marketplace-zendesk">
+         <string key="title">Ticket form</string>
+         <string key="path">expand/marketplace/ticket_form-zendesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9718272887583598marketplace-zendesk</string>
+      </map>
+      <map key="expand-l9740668181623229marketplace-zendesk">
+         <string key="title">Tickets list</string>
+         <string key="path">expand/marketplace/zendesk_tickets_list-zendesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9718272887583598marketplace-zendesk</string>
+      </map>
+      <map key="expand-zendeskt-tickets-searchmarketplace-zendesk">
+         <string key="title">Tickets search</string>
+         <string key="path">expand/marketplace/zendeskt_tickets_search-zendesk.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9718272887583598marketplace-zendesk</string>
+      </map>
+      <map key="expand-l9732605822124781marketplace-zoom">
+         <string key="title">Zoom extensions</string>
+         <string key="path">expand/marketplace/zoom.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9650191038731043marketplace</string>
+      </map>
+      <map key="expand-l9688710902755957">
+         <string key="title">Add-ons</string>
+         <string key="path">expand-addons-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l9714689616695399">
+         <string key="title">LumApps Publish</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9688710902755957</string>
+      </map>
+      <map key="expand-l9705731439474902">
+         <string key="title">Authentication</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish_authentication.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9714689616695399</string>
+      </map>
+      <map key="expand-l9670794697326575">
+         <string key="title">Sharing Google doc as a community
+                            post</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish_sharing_as_a_community_post.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9714689616695399</string>
+      </map>
+      <map key="expand-l5248125167365295">
+         <string key="title">Sharing Google doc as content</string>
+         <string key="path">expand/lumapps-publish/sharing_as_content.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9714689616695399</string>
+      </map>
+      <map key="expand-l9668107244160425">
+         <string key="title">Share as new content</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish_sharing_as_content.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l5248125167365295</string>
+      </map>
+      <map key="expand-l5172876776736343">
+         <string key="title">Synchronize content
+                                update</string>
+         <string key="path">expand/lumapps-publish/synchronize_content_update.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l5248125167365295</string>
+      </map>
+      <map key="expand-l9659149066939928">
+         <string key="title">Limitations</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish_limitations.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l5248125167365295</string>
+      </map>
+      <map key="expand-l9681544509991171">
+         <string key="title">Actions from the add-on</string>
+         <string key="path">expand/lumapps-publish/lumapps_publish_unlinking.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9714689616695399</string>
+      </map>
+      <map key="expand-l754370113980299">
+         <string key="title">LumApps with Microsoft Teams</string>
+         <string key="path">expand/lumapps_with_ms_teams.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9688710902755957</string>
+      </map>
+      <map key="expand-l9199306970806198">
+         <string key="title">Add LumApps in MS Teams</string>
+         <string key="path">expand/add_lumapps_in_ms_teams.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l754370113980299</string>
+      </map>
+      <map key="expand-l002155653361963772">
+         <string key="title">LumApps in MS Teams</string>
+         <string key="path">expand/lumapps_with_ms_teams_lumapps_in_ms_teams.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l754370113980299</string>
+      </map>
+      <map key="expand-l6338043380091612">
+         <string key="title">MS Teams in LumApps</string>
+         <string key="path">expand/lumapps_with_ms_teams_ms_teams_in_lumapps.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l754370113980299</string>
+      </map>
+      <map key="expand-l9679752874547072">
+         <string key="title">Google Cloud Search</string>
+         <string key="path">expand-gcs-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l8954144095965485">
+         <string key="title">Enabling Google Cloud Search</string>
+         <string key="path">search_engine/enabling-google-cloud-search-procedures.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9679752874547072</string>
+      </map>
+      <map key="expand-l8952352460521386">
+         <string key="title">Google Cloud Search licenses</string>
+         <string key="path">search_engine/enabling_google_cloud_search_cloud_search_licenses.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l8954144095965485</string>
+      </map>
+      <map key="expand-l8943394283300888">
+         <string key="title">OAuth scopes</string>
+         <string key="path">search_engine/enabling-google-cloud-search-oauth-scopes.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l8954144095965485</string>
+      </map>
+      <map key="expand-l897026881496238">
+         <string key="title">Identity source</string>
+         <string key="path">search_engine/enabling-google-cloud-search-identity-source.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l8954144095965485</string>
+      </map>
+      <map key="expand-l8961310637741883">
+         <string key="title">Technical account</string>
+         <string key="path">search_engine/enabling-google-cloud-search-technical-account.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l8954144095965485</string>
+      </map>
+      <map key="expand-l8958623184575734">
+         <string key="title">Contact Support team</string>
+         <string key="path">search_engine/enabling-google-cloud-search-support-team.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l8954144095965485</string>
+      </map>
+      <map key="expand-l8920998989261257">
+         <string key="title">Enable or Disable third-party
+                        datasource</string>
+         <string key="path">search_engine/gcs-enable-or-disable-third-party-datasource.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9679752874547072</string>
+      </map>
+      <map key="expand-l8919207353817158">
+         <string key="title">Configure third party datasource
+                        display</string>
+         <string key="path">search_engine/gcs-configure-third-party-datasource-display.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9679752874547072</string>
+      </map>
+      <map key="expand-l9175409881218871">
+         <string key="title">Google Analytics</string>
+         <string key="path">analytics/expand-google-analytics-landing.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l9174514212508433">
+         <string key="title">Configure Google Analytics</string>
+         <string key="path">analytics/google/set_up_google_analytics.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9175409881218871</string>
+      </map>
+      <map key="expand-l9165556035287936">
+         <string key="title">Configure Newsletter tracking</string>
+         <string key="path">analytics/google/newsletter/tracking.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9175409881218871</string>
+      </map>
+      <map key="expand-l9117182176320475">
+         <string key="title">Configure Google Tag Manager</string>
+         <string key="path">analytics/google/setting_up_google_tag_manager_gtm.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9175409881218871</string>
+      </map>
+      <map key="expand-l9280220256675464">
+         <string key="title">Create a report in Data Studio</string>
+         <string key="path">analytics/google/create_GDS_report.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l9175409881218871</string>
+      </map>
+      <map key="expand-l7305071474273681">
+         <string key="title">Customizations API</string>
+         <string key="path">customizations_api/customizations_api.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-landing</string>
+      </map>
+      <map key="expand-l893981101241269">
+         <string key="title">CSS best practices</string>
+         <string key="path">customizations_api/css/README_customizations_css.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l7305071474273681</string>
+      </map>
+      <map key="expand-l435907961524893">
+         <string key="title">Customizations API - JavaScript</string>
+         <string key="path">customizations_api/js/README_customizations_api_-_javascript.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l7305071474273681</string>
+      </map>
+      <map key="expand-l43787876051340235">
+         <string key="title">Getting started</string>
+         <string key="path">customizations_api/js/README_getting_started.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l4333101199332712">
+         <string key="title">Principles</string>
+         <string key="path">customizations_api/js/README_principles.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l4325934508544702">
+         <string key="title">Capabilities</string>
+         <string key="path">customizations_api/js/README_capabilities.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l4312497391725568">
+         <string key="title">API</string>
+         <string key="path">customizations_api/js/README_api.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l35868886131439814">
+         <string key="title">Overview</string>
+         <string key="path">customizations_api/js/README_overview.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4312497391725568</string>
+      </map>
+      <map key="expand-l35797220713675837">
+         <string key="title">Uses cases</string>
+         <string key="path">customizations_api/js/README_uses_cases.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4312497391725568</string>
+      </map>
+      <map key="expand-l3543889660508819">
+         <string key="title">Disabling the sticky
+                                header</string>
+         <string key="path">customizations_api/js/README_disabling_the_sticky_header.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l4312497391725568</string>
+      </map>
+      <map key="expand-l35223900351796256">
+         <string key="title">Track navigation
+                                    events</string>
+         <string key="path">customizations_api/js/README_track_navigation_events.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l3543889660508819</string>
+      </map>
+      <map key="expand-l3536722969720809">
+         <string key="title">Detailed API</string>
+         <string key="path">customizations_api/js/README_detailed_api.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l3771426169816552">
+         <string key="title">Development</string>
+         <string key="path">customizations_api/js/README_development.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l37275313994593395">
+         <string key="title">Deployment</string>
+         <string key="path">customizations_api/js/README_deployment.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l3739176880834374">
+         <string key="title">Not supported features</string>
+         <string key="path">customizations_api/js/README_not_supported_features.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+      <map key="expand-l39228186197848947">
+         <string key="title">Best practices</string>
+         <string key="path">customizations_api/js/README_best_practices.html</string>
+         <string key="template">6677445895389184</string>
+         <array key="visible_by">
+            <string>PUBLIC</string>
+         </array>
+         <array key="metadata"/>
+         <string key="parent">expand-l435907961524893</string>
+      </map>
+   </map>
+</map>

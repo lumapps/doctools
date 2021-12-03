@@ -1,0 +1,4 @@
+
+*[class~='topic/image'][placement='inline'] {
+    display: none;
+}

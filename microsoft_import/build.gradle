@@ -1,0 +1,33 @@
+import org.yaml.snakeyaml.DumperOptions
+import org.yaml.snakeyaml.Yaml
+import static groovy.json.JsonOutput.*
+import net.sf.saxon.Transform
+
+
+buildscript{
+	ext{
+		springBootVersion = '1.5.7.RELEASE'
+    }
+    repositories{
+        mavenCentral()
+    }
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.yaml:snakeyaml:1.17")
+    }
+}
+
+plugins {
+	id "java"
+	id "com.github.eerohele.saxon-gradle" version "0.7.0" apply false
+}
+
+Yaml parser = new Yaml()
+
+def input = toJson(parser.load(("/Users/lionelmoizeau/workspace/microsoft-graph-docs/api-reference/v1.0/toc.yml" as File).text))
+
+def dir = new File("/Users/lionelmoizeau/workspace/doctools/microsoft_import/build/")
+dir.mkdir()
+
+File file = new File("/Users/lionelmoizeau/workspace/doctools/microsoft_import/build/input.json")
+      file.write prettyPrint(input)
