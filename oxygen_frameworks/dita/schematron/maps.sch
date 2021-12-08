@@ -17,7 +17,7 @@
     </pattern>
     <pattern id="chunks">
         <rule context="*[contains(@class, ' map/topicref')][@chunk='to-content']">
-            <assert test="ancestor::*[contains(@class, ' map/topicref')][not(@chunk='to-content')]" role="error" sqf:fix="removeChunk"> Chunks cannot be nested under chunks. </assert>
+            <assert test="ancestor::*[contains(@class, ' map/topicref')][@chunk='to-content'] => not()" role="error" sqf:fix="removeChunk"> Chunks cannot be nested under chunks. </assert>
             <sqf:fix id="removeChunk">
                 <sqf:description>
                     <sqf:title>Remove nested chunk</sqf:title>
