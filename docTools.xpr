@@ -70,6 +70,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -99,6 +102,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -132,6 +138,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -161,6 +170,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -194,6 +206,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -223,6 +238,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -256,6 +274,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -285,6 +306,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -318,6 +342,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -347,6 +374,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -380,6 +410,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -409,6 +442,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -442,6 +478,9 @@
                                             <field name="validationSchema">
                                                 <null/>
                                             </field>
+                                            <field name="validationAdvancedSettings">
+                                                <null/>
+                                            </field>
                                         </validationUnit>
                                         <validationUnit>
                                             <field name="validationType">
@@ -471,6 +510,9 @@
                                                 <null/>
                                             </field>
                                             <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                            <field name="validationAdvancedSettings">
                                                 <null/>
                                             </field>
                                         </validationUnit>
@@ -569,8 +611,6 @@
         <folder name="sources">
             <folder path="../product-documentation/"/>
         </folder>
-        <folder path="../dita-temp-dev/"/>
-        <folder path="../dita-temp/site_admin-publi/"/>
         <folder path="."/>
         <file name="../product-documentation/new-expand-publi.ditamap"/>
         <file name="../product-documentation/new-explore-publi.ditamap"/>
@@ -580,6 +620,5 @@
         <file name="../product-documentation/new-support-publi.ditamap"/>
         <file name="../product-documentation/new-troubleshooting-publi.ditamap"/>
         <file name="../product-documentation/new-use-publi.ditamap"/>
-        <file name="../product-documentation/new_users_and_permissions-publi.ditamap"/>
     </projectTree>
 </project>
