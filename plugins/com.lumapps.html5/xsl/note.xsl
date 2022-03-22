@@ -20,4 +20,10 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="*" mode="process.note.rights">
+        <div class="box box--rights">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
 </xsl:stylesheet>
