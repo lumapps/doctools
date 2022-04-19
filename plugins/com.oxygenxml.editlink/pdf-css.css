@@ -1,8 +1,0 @@
-[data-editlink]:after {
-  content: "Edit Online";
-  margin-left: 10px;
-  color: navy;
-  font-size: 12px;
-  font-weight: normal;
-  -oxy-link: attr(data-editlink);
-}
