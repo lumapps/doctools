@@ -3,8 +3,9 @@
     xmlns:sch="http://purl.oclc.org/dsdl/schematron"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
+
     <sch:pattern>
+
         <sch:rule context="*[contains(@class, ' topic/topic')]" id="id-pattern">
             <sch:assert
                 test="matches(@id, 'l\d+') or ends-with(@id, 'landing') or contains(@id, 'reuse_') or @id = 'warnings' or @id = 'who_can_use' or @id = 'tables'"
@@ -18,6 +19,10 @@
                     select="'l' || substring-after(xs:string(random-number-generator()?number), '0.')"
                 />
             </sqf:fix>
+        </sch:rule>
+
+        <sch:rule context="ul | ol">
+            <sch:assert test="count(li) > 1"> A <sch:name/> list must have more than one item. </sch:assert>
         </sch:rule>
         
     </sch:pattern>
