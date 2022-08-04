@@ -7,7 +7,7 @@
     <sch:pattern>
 
         <!--Rule for topic id-->
-        
+
         <sch:rule context="*[contains(@class, ' topic/topic')]" id="id-pattern">
             <sch:assert
                 test="matches(@id, 'l\d+') or ends-with(@id, 'landing') or contains(@id, 'reuse_') or @id = 'warnings' or @id = 'who_can_use' or @id = 'tables'"
@@ -24,17 +24,16 @@
         </sch:rule>
 
         <!--Rule for minimum number of list items-->
-        
+
         <sch:rule context="ul | ol">
             <sch:assert test="count(li) > 1"> A <sch:name/> list must have more than one item.
             </sch:assert>
         </sch:rule>
-        
+
         <!--Rule for paragraph needed in table entries-->
-        
+
         <sch:rule context="entry | stentry">
-            <sch:assert test="p"> Text inside a table must be wrapped in a paragraph.
-            </sch:assert>
+            <sch:assert test="p"> Text inside a table must be wrapped in a paragraph. </sch:assert>
         </sch:rule>
 
     </sch:pattern>
