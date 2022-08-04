@@ -26,8 +26,14 @@
         <!--Rule for minimum number of list items-->
 
         <sch:rule context="ul | ol">
-            <sch:assert test="count(li) > 1"> A <sch:name/> list must have more than one item.
-            </sch:assert>
+            <sch:assert test="count(li) > 1" sqf:fix="addListItem"> A <sch:name/> list must have
+                more than one item. </sch:assert>
+            <sqf:fix id="addListItem">
+                <sqf:description>
+                    <sqf:title>Add an item to the list</sqf:title>
+                </sqf:description>
+                <sqf:add node-type="element" target="li" position="last-child"/>
+            </sqf:fix>
         </sch:rule>
 
         <!--Rule for paragraph needed in table entries-->
