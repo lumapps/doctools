@@ -38,7 +38,7 @@
 
         <!--Rule for paragraph needed in table entries-->
 
-        <sch:rule context="entry | stentry">
+        <sch:rule context="entry[text()[normalize-space()] or *[not(self::p)]] | stentry[text()[normalize-space()] or *[not(self::p)]]">
             <sch:assert test="p"> Text inside a table must be wrapped in a paragraph. </sch:assert>
         </sch:rule>
 
