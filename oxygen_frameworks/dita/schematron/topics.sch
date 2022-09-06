@@ -26,7 +26,7 @@
         <!--Rule for minimum number of list items-->
 
         <sch:rule context="ul | ol">
-            <sch:assert test="count(li) > 1" sqf:fix="addListItem"> A <sch:name/> list must have
+            <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A <sch:name/> list must have
                 more than one item. </sch:assert>
             <sqf:fix id="addListItem">
                 <sqf:description>
@@ -34,11 +34,18 @@
                 </sqf:description>
                 <sqf:add node-type="element" target="li" position="last-child"/>
             </sqf:fix>
+            <sqf:fix id="transformInParagraph">
+                <sqf:description>
+                    <sqf:title>Transform item in paragraph</sqf:title>
+                </sqf:description>
+               <sqf:replace match="li" node-type="element" ></sqf:replace>
+            </sqf:fix>
         </sch:rule>
 
         <!--Rule for paragraph needed in table entries-->
 
-        <sch:rule context="entry[text()[normalize-space()] or *[not(self::p)]] | stentry[text()[normalize-space()] or *[not(self::p)]]">
+        <sch:rule
+            context="entry[text()[normalize-space()] or *[not(self::p)]] | stentry[text()[normalize-space()] or *[not(self::p)]]">
             <sch:assert test="p"> Text inside a table must be wrapped in a paragraph. </sch:assert>
         </sch:rule>
 
