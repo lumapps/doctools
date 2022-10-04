@@ -24,7 +24,7 @@
         </sch:rule>
 
         <!--Rule for minimum number of list items-->
-        
+
         <sch:rule context="ul | ol">
             <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A
                 <sch:name/> list must have more than one item. </sch:assert>
@@ -43,20 +43,24 @@
                 </sqf:replace>
             </sqf:fix>
         </sch:rule>
-        
-        <!--Rule for paragraph needed in table entries-->
-        
-        <sch:rule
-            context="entry[text()[normalize-space()] or *[not(self::p)]] | stentry[text()[normalize-space()] or *[not(self::p)]]">
-            <sch:assert test="p"> Text inside a table must be wrapped in a paragraph. </sch:assert>
+
+        <!--Rule for paragraph needed in table entries
+
+        <sch:rule context="(entry | stentry)">
+            <sch:assert test="count(*[not(contains(@class, '- topic/p '))])=0"> Text inside a table must be wrapped in a paragraph.
+            </sch:assert>
+            <sch:report test="child::text()"> Test.
+            </sch:report>
         </sch:rule>
         
-    
-    <!-- copy template -->
-    <xsl:template match="node() | @*">
-        <xsl:copy>
-            <xsl:apply-templates select="node() | @*"/>
-        </xsl:copy>
-    </xsl:template>
+        -->
+
+
+        <!-- copy template -->
+        <xsl:template match="node() | @*">
+            <xsl:copy>
+                <xsl:apply-templates select="node() | @*"/>
+            </xsl:copy>
+        </xsl:template>
     </sch:pattern>
 </schema>
