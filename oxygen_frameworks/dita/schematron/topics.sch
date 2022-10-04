@@ -24,10 +24,10 @@
         </sch:rule>
 
         <!--Rule for minimum number of list items-->
-
+        
         <sch:rule context="ul | ol">
-            <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A <sch:name/> list must have
-                more than one item. </sch:assert>
+            <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A
+                <sch:name/> list must have more than one item. </sch:assert>
             <sqf:fix id="addListItem">
                 <sqf:description>
                     <sqf:title>Add an item to the list</sqf:title>
@@ -38,16 +38,25 @@
                 <sqf:description>
                     <sqf:title>Transform item in paragraph</sqf:title>
                 </sqf:description>
-               <sqf:replace match="li" node-type="element" ></sqf:replace>
+                <sqf:replace match="." target="p" node-type="element">
+                    <xsl:apply-templates select="li/node()"/>
+                </sqf:replace>
             </sqf:fix>
         </sch:rule>
-
+        
         <!--Rule for paragraph needed in table entries-->
-
+        
         <sch:rule
             context="entry[text()[normalize-space()] or *[not(self::p)]] | stentry[text()[normalize-space()] or *[not(self::p)]]">
             <sch:assert test="p"> Text inside a table must be wrapped in a paragraph. </sch:assert>
         </sch:rule>
-
+        
+    
+    <!-- copy template -->
+    <xsl:template match="node() | @*">
+        <xsl:copy>
+            <xsl:apply-templates select="node() | @*"/>
+        </xsl:copy>
+    </xsl:template>
     </sch:pattern>
 </schema>
