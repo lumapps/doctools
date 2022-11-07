@@ -11,10 +11,10 @@
         Only applies to topics that are not nested.
     -->
     
-    <!--<xsl:template match="*[contains(@class, ' topic/body ')][not(count(ancestor::*[contains(@class, ' topic/topic ')]) > 1)]" name="topic.body">-->
-    <xsl:template
-        match="*[contains(@class, ' topic/body ')]"
-        name="topic.body">
+    <!--Legacy for nested topics 
+        <xsl:template match="*[contains(@class, ' topic/body ')][not(count(ancestor::*[contains(@class, ' topic/topic ')]) > 1)]" name="topic.body">
+    -->
+    <xsl:template match="*[contains(@class, ' topic/body ')]" name="topic.body">
         <!-- get the shortdesc para -->
         <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/shortdesc ')]"
             mode="main-shortdesc"/>
@@ -24,6 +24,7 @@
             <xsl:call-template name="setidaname"/>
             <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]"
                 mode="out-of-line"/>
+            
             <!-- here, you can generate a toc based on what's a child of body -->
             <!--xsl:call-template name="gen-sect-ptoc"/-->
             <!-- Works; not always wanted, though; could add a param to enable it.-->
@@ -39,14 +40,11 @@
             <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/abstract ')]"
                 mode="outofline"/>
             
-            
-            
             <!-- Insert pre-req links - after shortdesc - unless there is a prereq section about -->
             <xsl:apply-templates
                 select="following-sibling::*[contains(@class, ' topic/related-links ')]"
                 mode="prereqs"/>
             
-            <xsl:apply-templates/>
             <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]"
                 mode="out-of-line"/>
         </div>
@@ -98,8 +96,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template
-        match="*[contains(@class, ' topic/shortdesc ')]">
+    <xsl:template match="*[contains(@class, ' topic/shortdesc ')]">
         <xsl:apply-templates select="." mode="main-shortdesc"/>
         <xsl:apply-templates
             select="following-sibling::*[contains(@class, ' topic/related-links ')]" mode="prereqs"
