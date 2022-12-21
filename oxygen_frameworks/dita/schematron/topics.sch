@@ -7,7 +7,7 @@
     <sch:pattern>
         <sch:rule context="*[contains(@class, ' topic/topic')]" id="id-pattern">
             <sch:assert
-                test="matches(@id, 'l\d+') or ends-with(@id, 'landing') or contains(@id, 'reuse') or @id = 'warnings' or @id = 'who_can_use' or @id = 'tables'"
+                test="matches(@id, 'l\d+') or ends-with(@id, 'landing') or contains(@id, 'reuse') or @id = 'tables'"
                 sqf:fix="correctId"> The id "<value-of select="@id"/>" does not follow the right
                 pattern. </sch:assert>
             <sqf:fix id="correctId">
