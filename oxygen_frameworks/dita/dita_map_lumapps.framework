@@ -4571,7 +4571,7 @@ self::*[contains(@class," map/reltable ")]][1]
 										<String>${oxygenHome}/lib/oxygenDeveloperEclipse.jar</String>
 										<String>${oxygenHome}/lib/oxygen-basic-utilities.jar</String>
 										<String>${oxygenHome}/lib/oxygen-sandbox.jar</String>
-										<String>${oxygenHome}/lib/oxygen-editor-variables-parser.jar</String>
+										<String>${oxygenHome}/lib/oxygen-editor-reuse_notes-parser.jar</String>
 										<String>${oxygenHome}/lib/*resolver*.jar</String>
 										<String>${oxygenHome}/lib/xml-apis.jar</String>
 										<String>${oxygenHome}/lib/*xerces*.jar</String>
