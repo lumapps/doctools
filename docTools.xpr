@@ -1107,20 +1107,12 @@
             <folder path="../lumapps-dita/sources/"/>
         </folder>
         <folder name="resources">
-            <folder path="../../Documents/resources/dita-ot/plugins/"/>
+            <folder path="../dita-ot-4.0/plugins/"/>
             <folder path="../org.dita4publishers.json/"/>
         </folder>
         <folder name="sources">
             <folder path="../product-documentation/"/>
         </folder>
         <folder path="."/>
-        <file name="../product-documentation/new-expand-publi.ditamap"/>
-        <file name="../product-documentation/new-explore-publi.ditamap"/>
-        <file name="../product-documentation/new-installation-publi.ditamap"/>
-        <file name="../product-documentation/new-knowledge_base-publi.ditamap"/>
-        <file name="../product-documentation/new-mobile-publi.ditamap"/>
-        <file name="../product-documentation/new-support-publi.ditamap"/>
-        <file name="../product-documentation/new-troubleshooting-publi.ditamap"/>
-        <file name="../product-documentation/new-use-publi.ditamap"/>
     </projectTree>
 </project>
