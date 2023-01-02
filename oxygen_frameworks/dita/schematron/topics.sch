@@ -3,8 +3,11 @@
     xmlns:sch="http://purl.oclc.org/dsdl/schematron"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
+
     <sch:pattern>
+
+        <!--Rule for topic id-->
+
         <sch:rule context="*[contains(@class, ' topic/topic')]" id="id-pattern">
             <sch:assert
                 test="matches(@id, 'l\d+') or ends-with(@id, 'landing') or contains(@id, 'reuse_') or @id = 'warnings' or @id = 'who_can_use' or @id = 'tables'"
@@ -19,6 +22,45 @@
                 />
             </sqf:fix>
         </sch:rule>
+
+        <!--Rule for minimum number of list items-->
+
+        <sch:rule context="ul | ol">
+            <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A
+                <sch:name/> list must have more than one item. </sch:assert>
+            <sqf:fix id="addListItem">
+                <sqf:description>
+                    <sqf:title>Add an item to the list</sqf:title>
+                </sqf:description>
+                <sqf:add node-type="element" target="li" position="last-child"/>
+            </sqf:fix>
+            <sqf:fix id="transformInParagraph">
+                <sqf:description>
+                    <sqf:title>Transform item in paragraph</sqf:title>
+                </sqf:description>
+                <sqf:replace match="." target="p" node-type="element">
+                    <xsl:apply-templates select="li/node()"/>
+                </sqf:replace>
+            </sqf:fix>
+        </sch:rule>
+
+        <!--Rule for paragraph needed in table entries
+
+        <sch:rule context="(entry | stentry)">
+            <sch:assert test="count(*[not(contains(@class, '- topic/p '))])=0"> Text inside a table must be wrapped in a paragraph.
+            </sch:assert>
+            <sch:report test="child::text()"> Test.
+            </sch:report>
+        </sch:rule>
         
+        -->
+
+
+        <!-- copy template -->
+        <xsl:template match="node() | @*">
+            <xsl:copy>
+                <xsl:apply-templates select="node() | @*"/>
+            </xsl:copy>
+        </xsl:template>
     </sch:pattern>
 </schema>
