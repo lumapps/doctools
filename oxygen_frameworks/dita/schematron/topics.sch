@@ -29,7 +29,7 @@
 
         <sch:rule context="ul | ol">
             <sch:assert test="count(li) > 1" sqf:fix="addListItem transformInParagraph"> A
-                <sch:name/> list must have more than one item. </sch:assert>
+                <sch:name/> list must contain more than one item. </sch:assert>
             <sqf:fix id="addListItem">
                 <sqf:description>
                     <sqf:title>Add an item to the list</sqf:title>
@@ -38,7 +38,7 @@
             </sqf:fix>
             <sqf:fix id="transformInParagraph">
                 <sqf:description>
-                    <sqf:title>Transform item in paragraph</sqf:title>
+                    <sqf:title>Transform the item into a paragraph</sqf:title>
                 </sqf:description>
                 <sqf:replace match="." target="p" node-type="element">
                     <xsl:apply-templates select="li/node()"/>
@@ -96,8 +96,7 @@
     <!-- An image element should have the @width attribute assigned -->
     <pattern id="image_width_mandatory">
         <rule context="image">
-            <assert test="@width">An image element should have the @width attribute assigned. 600px
-                should be the maximum.</assert>
+            <assert test="@width">An image should have the @width attribute assigned. Do not exceed 600 px. Boilerplates must have a width of 20 px.</assert>
         </rule>
     </pattern>
 
@@ -105,7 +104,7 @@
     <!-- Each note element should have the @type or @othertype attribute assigned -->
     <pattern id="add_note_type">
         <rule context="note[not(@conref)][not(@conkeyref)]">
-            <assert test="@type | @othertype">Each Note element should have the @type (note,
+            <assert test="@type | @othertype">All notes should have the @type (note,
                 important, attention) or @othertype (rights) attribute assigned.</assert>
         </rule>
     </pattern>
