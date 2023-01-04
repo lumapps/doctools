@@ -53,7 +53,7 @@
             </xsl:copy>
         </xsl:template>
     </sch:pattern>
-    
+
     <!-- Rule for paragraph needed in table entries
         <pattern id="p_in_tables">
         <sch:rule context="(entry | stentry)">
@@ -93,21 +93,21 @@
     </pattern>
     -->
 
-    <!-- An image element should have the @width attribute assigned
+    <!-- An image element should have the @width attribute assigned -->
     <pattern id="image_width_mandatory">
         <rule context="image">
             <assert test="@width">An image element should have the @width attribute
                 assigned.</assert>
         </rule>
     </pattern>
-    -->
-    
-    <!-- Each Note element should have the @type attribute assigned 
+
+
+    <!-- Each note element should have the @type attribute assigned -->
     <pattern id="add_note_type">
         <rule context="note[not(@conref)]">
-            <assert test="@type | @othertype">Each Note element should have the @type or @othertype attribute
-                assigned.</assert>
+            <assert test="@type | @othertype">Each Note element should have the @type (note,
+                important, attention) or @othertype (rights) attribute assigned.</assert>
         </rule>
     </pattern>
-    -->
+
 </schema>
