@@ -96,15 +96,15 @@
     <!-- An image element should have the @width attribute assigned -->
     <pattern id="image_width_mandatory">
         <rule context="image">
-            <assert test="@width">An image element should have the @width attribute
-                assigned. 600px should be the maximum.</assert>
+            <assert test="@width">An image element should have the @width attribute assigned. 600px
+                should be the maximum.</assert>
         </rule>
     </pattern>
 
 
     <!-- Each note element should have the @type or @othertype attribute assigned -->
     <pattern id="add_note_type">
-        <rule context="note[not(@conref)]">
+        <rule context="note[not(@conref)][not(@conkeyref)]">
             <assert test="@type | @othertype">Each Note element should have the @type (note,
                 important, attention) or @othertype (rights) attribute assigned.</assert>
         </rule>
