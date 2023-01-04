@@ -69,8 +69,8 @@
             <!-- get the abstract para -->
             <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/abstract ')]" mode="outofline"/>
 
-            <!-- get the shortdesc para -->
-            <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/shortdesc ')]" mode="outofline"/>
+            <!-- get the shortdesc para 
+            <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/shortdesc ')]" mode="outofline"/> -->
 
             <!-- Insert pre-req links - after shortdesc - unless there is a prereq section about -->
             <xsl:apply-templates select="following-sibling::*[contains(@class, ' topic/related-links ')]" mode="prereqs"/>
