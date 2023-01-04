@@ -1113,6 +1113,7 @@
         <folder name="sources">
             <folder path="../product-documentation/"/>
         </folder>
+        <folder path="../dita-ot-4.0/"/>
         <folder path="."/>
         <file name="../product-documentation/new-expand-publi.ditamap"/>
         <file name="../product-documentation/new-explore-publi.ditamap"/>
