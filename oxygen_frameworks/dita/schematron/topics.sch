@@ -46,18 +46,6 @@
             </sqf:fix>
         </sch:rule>
 
-        <!--Rule for paragraph needed in table entries
-
-        <sch:rule context="(entry | stentry)">
-            <sch:assert test="count(*[not(contains(@class, '- topic/p '))])=0"> Text inside a table must be wrapped in a paragraph.
-            </sch:assert>
-            <sch:report test="child::text()"> Test.
-            </sch:report>
-        </sch:rule>
-        
-        -->
-
-
         <!-- copy template -->
         <xsl:template match="node() | @*">
             <xsl:copy>
@@ -65,10 +53,20 @@
             </xsl:copy>
         </xsl:template>
     </sch:pattern>
+    
+    <!-- Rule for paragraph needed in table entries
+        <pattern id="p_in_tables">
+        <sch:rule context="(entry | stentry)">
+            <sch:assert test="count(*[not(contains(@class, '- topic/p '))])=0"> Text inside a table must be wrapped in a paragraph.
+            </sch:assert>
+            <sch:report test="child::text()"> Test.
+            </sch:report>
+        </sch:rule>
+        </pattern>
+        -->
 
-    <!--  
-    <pattern id="no_alt_desc">
-        EXM-28035 Avoid reporting warnings when the image has a @conref or @conkeyref, the attribute might be on the target. 
+    <!--  Report images without alt text, but avoid reporting warnings when the image has a @conref or @conkeyref, the attribute might be on the target. 
+    <pattern id="no_alt_desc_to_images">
         <rule context="*[contains(@class, 'topic/image')][not(@conref)][not(@conkeyref)]"
             id="accessibility">
             <assert test="@alt | alt" role="warning" sqf:fix="addAltElem"> Images must have text
@@ -84,5 +82,32 @@
             </sqf:fix>
         </rule>
     </pattern>
--->
+    -->
+
+    <!-- An Image element should be wrapped in a Figure element instead of a Paragraph element 
+    <pattern id="images_into_figs">
+        <rule context="p">
+            <report test="image">An image element should be wrapped in a Figure element instead of a
+                Paragraph element.</report>
+        </rule>
+    </pattern>
+    -->
+
+    <!-- An image element should have the @width attribute assigned
+    <pattern id="image_width_mandatory">
+        <rule context="image">
+            <assert test="@width">An image element should have the @width attribute
+                assigned.</assert>
+        </rule>
+    </pattern>
+    -->
+    
+    <!-- Each Note element should have the @type attribute assigned 
+    <pattern id="add_note_type">
+        <rule context="note[not(@conref)]">
+            <assert test="@type | @othertype">Each Note element should have the @type or @othertype attribute
+                assigned.</assert>
+        </rule>
+    </pattern>
+    -->
 </schema>
