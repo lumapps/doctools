@@ -136,8 +136,9 @@
     <!-- An image element should have the @width attribute assigned -->
     <pattern id="image_width_mandatory">
         <rule context="image">
-            <assert test="@width">An image must have a @width attribute. Do not exceed 600 px.
-                Boilerplates must have a width of 20 px.</assert>
+            <assert test="@width"> "<sch:value-of select="@keyref"/>" does not have a width. An
+                image must have a @width attribute. Do not exceed 600 px. Boilerplates must have a
+                width of 20 px.</assert>
         </rule>
     </pattern>
 
