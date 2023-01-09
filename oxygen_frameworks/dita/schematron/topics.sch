@@ -152,7 +152,7 @@
 
 
 
-    <!-- All images must be wrapped in a fig element (except boilerplates). A fig element cannot be wrapped in a paragraph tag.
+    <!-- All images must be wrapped in a fig element (except boilerplates). A fig element cannot be wrapped in a paragraph tag.  -->
     <sch:pattern> 
         <sch:rule context="*[contains(@class, 'topic/image')]" role="warn">
             <sch:report test="not(parent::fig) and not(contains(@keyref, 'boilerplate'))">An image must be wrapped in a figure
@@ -163,7 +163,7 @@
                 element.</sch:assert>
         </sch:rule>
     </sch:pattern>    
- -->
+
 
 
     <!-- Rule for paragraph needed in table entries
