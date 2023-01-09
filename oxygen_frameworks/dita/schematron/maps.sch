@@ -16,8 +16,10 @@
         </rule>
     </pattern>
     <pattern id="chunks">
-        <rule context="*[contains(@class, ' map/topicref')][@chunk='to-content']">
-            <assert test="ancestor::*[contains(@class, ' map/topicref')][@chunk='to-content'] => not()" role="error" sqf:fix="removeChunk"> Chunks cannot be nested under chunks. </assert>
+        <rule context="*[contains(@class, ' map/topicref')][@chunk = 'to-content']">
+            <assert
+                test="ancestor::*[contains(@class, ' map/topicref')][@chunk = 'to-content'] => not()"
+                role="error" sqf:fix="removeChunk"> Chunks cannot be nested under chunks. </assert>
             <sqf:fix id="removeChunk">
                 <sqf:description>
                     <sqf:title>Remove nested chunk</sqf:title>
@@ -32,10 +34,10 @@
             role="error">
             <let name="href" value="@href"/>
             <let name="href-file" value="tokenize($href, '/')[last()]"/>
-            <assert test="$href => contains('/')" role="error" id="topic-in-root"> <value-of
-                select="$href-file"/> is in the repository root folder. DITA files should not be in
-                the repository root folder. Use the Move operation to put it in the appropriate
-                folder.</assert>
+            <assert test="$href => contains('/')" role="error" id="topic-in-root">
+                <value-of select="$href-file"/> is in the repository root folder. DITA files should
+                not be in the repository root folder. Use the Move operation to put it in the
+                appropriate folder.</assert>
             <assert test="$href => matches('_\d+\.dita$') => not()" role="warning"
                 id="existing-file-name"> You created a file that has the same name as an already
                 existing file. Make sure <value-of select="$href-file"/> has a specific name.
