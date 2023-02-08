@@ -8,6 +8,18 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    
+    <xsl:template match="*" mode="process.note.tip">
+        <div class="box box--tip">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="*" mode="process.note.important">
+        <div class="box box--info">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
 
     <xsl:template match="*" mode="process.note">
         <xsl:choose>
@@ -23,11 +35,5 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
-    <xsl:template match="*" mode="process.note.important">
-        <div class="box box--info">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    
+   
 </xsl:stylesheet>
