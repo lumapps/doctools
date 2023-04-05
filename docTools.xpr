@@ -571,8 +571,39 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.custom.editor.variables.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>user.defined.editor.variables</String>
+                        <userEditorVariable-array>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ditaot-prod}</String>
+                                </field>
+                                <field name="value">
+                                    <String>${homeDir}/workspace/dita-ot-4.0/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ditaot-dev}</String>
+                                </field>
+                                <field name="value">
+                                    <String>${homeDir}/workspace/dita-ot-dev/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                        </userEditorVariable-array>
                     </entry>
                     <entry>
                         <String>validation.scenario.associations</String>
@@ -1097,11 +1128,25 @@
         </options>
     </meta>
     <projectTree name="docTools.xpr">
-        <folder name="dita-ot brew">
-            <folder path="../../../../usr/local/Cellar/dita-ot/3.7.1/libexec/plugins/"/>
+        <folder masterFiles="true" name="Main Files">
+            <file name="../product-documentation/administration-publi.ditamap"/>
+            <file name="../product-documentation/all-maps-utils.ditamap"/>
+            <file name="../product-documentation/contribution-collaboration-publi.ditamap"/>
+            <file name="../product-documentation/iam-publi.ditamap"/>
+            <file name="../product-documentation/installation-publi.ditamap"/>
+            <file name="../product-documentation/introduction-publi.ditamap"/>
+            <file name="../product-documentation/knowledge-management-publi.ditamap"/>
+            <file name="../product-documentation/mobile-publi.ditamap"/>
+            <file name="../product-documentation/support-announcements-publi.ditamap"/>
+            <file name="../product-documentation/troubleshooting-publi.ditamap"/>
+            <file name="../product-documentation/user-activity-publi.ditamap"/>
+            <file name="../product-documentation/visual-design-publi.ditamap"/>
         </folder>
         <folder name="dita-ot dev">
-            <folder path="../dita-ot/src/main/"/>
+            <folder path="../dita-ot-dev/"/>
+        </folder>
+        <folder name="dita-ot prod">
+            <folder path="../dita-ot-4.0/"/>
         </folder>
         <folder name="lumapps-dita">
             <folder path="../lumapps-dita/sources/"/>
