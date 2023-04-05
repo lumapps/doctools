@@ -1128,6 +1128,20 @@
         </options>
     </meta>
     <projectTree name="docTools.xpr">
+        <folder masterFiles="true" name="Main Files">
+            <file name="../product-documentation/administration-publi.ditamap"/>
+            <file name="../product-documentation/all-maps-utils.ditamap"/>
+            <file name="../product-documentation/contribution-collaboration-publi.ditamap"/>
+            <file name="../product-documentation/iam-publi.ditamap"/>
+            <file name="../product-documentation/installation-publi.ditamap"/>
+            <file name="../product-documentation/introduction-publi.ditamap"/>
+            <file name="../product-documentation/knowledge-management-publi.ditamap"/>
+            <file name="../product-documentation/mobile-publi.ditamap"/>
+            <file name="../product-documentation/support-announcements-publi.ditamap"/>
+            <file name="../product-documentation/troubleshooting-publi.ditamap"/>
+            <file name="../product-documentation/user-activity-publi.ditamap"/>
+            <file name="../product-documentation/visual-design-publi.ditamap"/>
+        </folder>
         <folder name="dita-ot dev">
             <folder path="../dita-ot-dev/"/>
         </folder>
