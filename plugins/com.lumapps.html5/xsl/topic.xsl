@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math" version="3.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
+    version="3.0">
 
 
     <xsl:template name="gen-topic">
         <xsl:param name="nestlevel" as="xs:integer">
             <xsl:choose>
                 <!-- Limit depth for historical reasons, could allow any depth. Previously limit was 5. -->
-                <xsl:when test="count(ancestor::*[contains(@class, ' topic/topic ')]) > 9">9</xsl:when>
+                <xsl:when test="count(ancestor::*[contains(@class, ' topic/topic ')]) > 9"
+                    >9</xsl:when>
                 <xsl:otherwise>
                     <xsl:sequence select="count(ancestor::*[contains(@class, ' topic/topic ')])"/>
                 </xsl:otherwise>
@@ -18,14 +21,18 @@
                 <!-- Do not reset xml:lang if it is already set on <html> -->
                 <!-- Moved outputclass to the body tag -->
                 <!-- Keep ditaval based styling at this point (replace DITA-OT 1.6 and earlier call to gen-style) -->
-                <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass" mode="add-ditaval-style"/>
+                <xsl:apply-templates
+                    select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass"
+                    mode="add-ditaval-style"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="commonattributes">
                     <xsl:with-param name="default-output-class">
                         <xsl:choose>
                             <xsl:when test="$nestlevel = 1">
-                                <xsl:value-of select="concat('nested', $nestlevel, ' docWidget docWidget-body')"/>
+                                <xsl:value-of
+                                    select="concat('nested', $nestlevel, ' docWidget docWidget-body')"
+                                />
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:value-of select="concat('nested', $nestlevel)"/>
@@ -54,7 +61,8 @@
                 </xsl:with-param>
             </xsl:call-template>
             <xsl:call-template name="setidaname"/>
-            <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
+            <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]"
+                mode="out-of-line"/>
             <!-- here, you can generate a toc based on what's a child of body -->
             <!--xsl:call-template name="gen-sect-ptoc"/-->
             <!-- Works; not always wanted, though; could add a param to enable it.-->
@@ -67,16 +75,31 @@
 
             <!-- Added for DITA 1.1 "Shortdesc proposal" -->
             <!-- get the abstract para -->
-            <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/abstract ')]" mode="outofline"/>
+            <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/abstract ')]"
+                mode="outofline"/>
 
             <!-- get the shortdesc para 
             <xsl:apply-templates select="preceding-sibling::*[contains(@class, ' topic/shortdesc ')]" mode="outofline"/> -->
 
             <!-- Insert pre-req links - after shortdesc - unless there is a prereq section about -->
-            <xsl:apply-templates select="following-sibling::*[contains(@class, ' topic/related-links ')]" mode="prereqs"/>
+            <xsl:apply-templates
+                select="following-sibling::*[contains(@class, ' topic/related-links ')]"
+                mode="prereqs"/>
 
             <xsl:apply-templates/>
-            <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
+            <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]"
+                mode="out-of-line"/>
+        </div>
+    </xsl:template>
+    
+    <!-- add "example" as the default outputclass value for all examples -->
+    <xsl:template match="*[contains(@class, ' topic/example ')]" name="topic.example">
+        <div class="example">
+            <xsl:call-template name="commonattributes">
+                <xsl:with-param name="default-output-class" select="'example'"/>
+            </xsl:call-template>
+            <xsl:call-template name="setidaname"/>
+            <xsl:apply-templates/>
         </div>
     </xsl:template>
 
