@@ -30,6 +30,7 @@ See the accompanying LICENSE file for applicable license.
                 </abbr>
             </xsl:if>
         </xsl:if>
+        <!-- add "uicontrol" as the default outputclass value for all uicontrols -->
         <span class="uicontrol">
             <xsl:call-template name="commonattributes">
                 <xsl:with-param name="default-output-class" select="'uicontrol'"/> 
