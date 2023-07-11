@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
-    xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+<sch:schema queryBinding="xslt3" xmlns:sch="http://purl.oclc.org/dsdl/schematron"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <title>Topics checks</title>
-    <ns uri="http://dita.oasis-open.org/architecture/2005/" prefix="ditaarch"/>
+    <sch:title>Topics checks</sch:title>
+    <sch:ns uri="http://dita.oasis-open.org/architecture/2005/" prefix="ditaarch"/>
 
     <sch:pattern>
         <!--Rule for topic ID -->
@@ -134,35 +133,61 @@
     </sch:pattern>
 
     <!-- An image element should have the @width attribute assigned -->
-    <pattern id="image_width_mandatory">
-        <rule context="image">
-            <assert test="@width"> "<sch:value-of select="@keyref"/>" does not have a width. An
+    <sch:pattern id="image_width_mandatory">
+        <sch:rule context="image">
+            <sch:assert test="@width"> "<sch:value-of select="@keyref"/>" does not have a width. An
                 image must have a @width attribute. Do not exceed 600 px. Boilerplates must have a
-                width of 20 px.</assert>
-        </rule>
-    </pattern>
+                width of 20 px.</sch:assert>
+        </sch:rule>
+    </sch:pattern>
 
     <!-- Each note element should have the @type or @othertype attribute assigned -->
-    <pattern id="add_note_type">
-        <rule context="note[not(@conref)][not(@conkeyref)]">
-            <assert test="@type | @othertype">All notes should have the @type (note, important,
-                attention) or @othertype (rights) attribute assigned.</assert>
-        </rule>
-    </pattern>
+    <sch:pattern id="add_note_type">
+        <sch:rule context="note[not(@conref)][not(@conkeyref)]">
+            <sch:assert test="@type | @othertype">All notes should have the @type (note, important,
+                attention) or @othertype (rights) attribute assigned.</sch:assert>
+        </sch:rule>
+    </sch:pattern>
 
 
 
     <!-- All images must be wrapped in a fig element (except boilerplates). A fig element cannot be wrapped in a paragraph tag.  -->
-    <sch:pattern> 
+    <sch:pattern>
         <sch:rule context="*[contains(@class, 'topic/image')]" role="warn">
-            <sch:report test="not(parent::fig) and not(contains(@keyref, 'boilerplate'))">An image must be wrapped in a figure
-                element.</sch:report>
+            <sch:report test="not(parent::fig) and not(contains(@keyref, 'boilerplate'))">An image
+                must be wrapped in a figure element.</sch:report>
         </sch:rule>
         <sch:rule context="*[contains(@class, 'topic/fig')]" role="warn">
             <sch:assert test="not(parent::p)">A figure cannot be inside of a paragraph
                 element.</sch:assert>
         </sch:rule>
-    </sch:pattern>    
+    </sch:pattern>
+
+
+
+
+
+    <!-- All outputclass with mdi must contain 'mdi ' (tokenize version).  -->
+    <sch:pattern>
+        <sch:rule context="*[contains(@outputclass, 'mdi-')]">
+            <sch:let name="classes" value="tokenize(@outputclass, ' ')"/>
+            <sch:assert test="$classes = 'mdi'">Add a "mdi" to the outputclass</sch:assert>
+            <!--<sqf:fix id="insertmdi">
+                <sqf:description>
+                    <sqf:title>Add a 'mdi' to the outputclass</sqf:title>
+                </sqf:description>
+                <sqf:replace match="@outputclass" node-type="attribute" target="outputclass"
+                    select="concat('mdi ', .)"/>
+            </sqf:fix>-->
+        </sch:rule>
+    </sch:pattern>
+
+    <!-- All outputclass with mdi must contain 'mdi ' (simple version).  -->
+    <!--<sch:pattern>
+        <sch:rule context="*[contains(@outputclass, 'mdi-')]">
+            <sch:assert test="*[contains(@outputclass, 'mdi ')]"/>
+        </sch:rule>
+    </sch:pattern>-->
 
 
 
@@ -213,4 +238,4 @@
             <xsl:apply-templates select="node() | @*" mode="copyExceptClass"/>
         </xsl:copy>
     </xsl:template>
-</schema>
+</sch:schema>
