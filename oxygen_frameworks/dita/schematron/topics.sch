@@ -152,17 +152,17 @@
 
 
 
-    <!-- All images must be wrapped in a fig element (except boilerplates). A fig element cannot be wrapped in a paragraph tag.  -->
-    <sch:pattern> 
+    <!-- All images must be wrapped in a fig element (except boilerplates and svg). A fig element cannot be wrapped in a paragraph tag.  -->
+    <sch:pattern>
         <sch:rule context="*[contains(@class, 'topic/image')]" role="warn">
-            <sch:report test="not(parent::fig) and not(contains(@keyref, 'boilerplate'))">An image must be wrapped in a figure
-                element.</sch:report>
+            <sch:report test="not(parent::fig) and not(contains(@keyref, 'boilerplate')) and not(contains(@keyref, 'svg'))">An image
+                must be wrapped in a figure element.</sch:report>
         </sch:rule>
         <sch:rule context="*[contains(@class, 'topic/fig')]" role="warn">
             <sch:assert test="not(parent::p)">A figure cannot be inside of a paragraph
                 element.</sch:assert>
         </sch:rule>
-    </sch:pattern>    
+    </sch:pattern>
 
 
 
