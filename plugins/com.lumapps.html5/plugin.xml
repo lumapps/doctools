@@ -9,6 +9,7 @@
     <feature extension="dita.xsl.html5" file="xsl/related.xsl"/>
     <feature extension="dita.xsl.html5" file="xsl/shortdesc.xsl"/>
     <feature extension="dita.xsl.html5" file="xsl/topic.xsl"/>
+    <feature extension="dita.xsl.html5" file="xsl/pr-d.xsl"/>
     <feature extension="dita.xsl.html5" file="xsl/ui-d.xsl"/>
     <feature extension="dita.xsl.topicpull" file="xsl/peers.xsl"/>
 </plugin>
