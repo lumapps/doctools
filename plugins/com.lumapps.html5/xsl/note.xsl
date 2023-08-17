@@ -15,6 +15,12 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="*" mode="process.note.remember">
+        <div class="box box--remember">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="*" mode="process.note.important">
         <div class="box box--info">
             <xsl:apply-templates/>
