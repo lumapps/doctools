@@ -132,12 +132,33 @@
         </sqf:fixes>
     </sch:pattern>
 
-    <!-- An image element should have the @width attribute assigned -->
-    <sch:pattern id="image_width_mandatory">
-        <sch:rule context="image">
-            <sch:assert test="@width"> "<sch:value-of select="@keyref"/>" does not have a width. An
-                image must have a @width attribute. Do not exceed 600 px. Boilerplates must have a
-                width of 20 px.</sch:assert>
+    <!-- images -->
+    <sch:pattern>
+        <!-- target image elements -->
+        <sch:rule context="*[contains(@class, 'topic/image')]">
+            <!-- check: width attribute required on image elements -->
+            <sch:assert test="@width"> The image "<sch:value-of select="@keyref"/>" does not have a
+                width. An image must have a @width attribute. Do not exceed 600 px. Boilerplates
+                must have a width of 20 px. </sch:assert>
+
+            <!-- check: image element has alt child element or attribute -->
+            <sch:report test="not(@alt) and not(alt)" role="warning"> Images must have an alt child
+                element. The alt element value can be empty when the image should be ignored by
+                assistive technology. To write your alt text, refer to
+                https://www.w3.org/WAI/tutorials/images/decision-tree/ </sch:report>
+
+            <!-- check: image element inside fig element -->
+            <sch:report
+                test="not(parent::fig) and not(contains(@keyref, 'boilerplate')) and not(contains(@keyref, 'svg'))"
+                role="warning"> An image must be wrapped in a figure element. </sch:report>
+        </sch:rule>
+    </sch:pattern>
+
+    <!-- fig element -->
+     <sch:pattern>
+        <sch:rule context="*[contains(@class, 'topic/fig')]" role="warn">
+            <sch:assert test="not(parent::p)">A figure cannot be inside of a paragraph
+                element.</sch:assert>
         </sch:rule>
     </sch:pattern>
 
@@ -148,24 +169,6 @@
                 attention) or @othertype (rights) attribute assigned.</sch:assert>
         </sch:rule>
     </sch:pattern>
-
-
-
-    <!-- All images must be wrapped in a fig element (except boilerplates and svg). A fig element cannot be wrapped in a paragraph tag.  -->
-    <sch:pattern>
-        <sch:rule context="*[contains(@class, 'topic/image')]" role="warn">
-            <sch:report
-                test="not(parent::fig) and not(contains(@keyref, 'boilerplate')) and not(contains(@keyref, 'svg'))"
-                >An image must be wrapped in a figure element.</sch:report>
-        </sch:rule>
-        <sch:rule context="*[contains(@class, 'topic/fig')]" role="warn">
-            <sch:assert test="not(parent::p)">A figure cannot be inside of a paragraph
-                element.</sch:assert>
-        </sch:rule>
-    </sch:pattern>
-
-
-
 
 
     <!-- All outputclass with mdi must contain 'mdi ' (tokenize version).  -->
@@ -202,29 +205,6 @@
         </sch:rule>
         </pattern>
         -->
-
-
-
-    <!--  Report images without alt text, but avoid reporting warnings when the image has a @conref or @conkeyref, the attribute might be on the target. 
-    <pattern id="no_alt_desc_to_images">
-        <rule context="*[contains(@class, 'topic/image')][not(@conref)][not(@conkeyref)]"
-            id="accessibility">
-            <assert test="@alt | alt" role="warning" sqf:fix="addAltElem"> Images must have text
-                alternatives that describe the information or function represented by them.</assert>
-
-            <sqf:fix id="addAltElem">
-                <sqf:description>
-                    <sqf:title>Add alt element</sqf:title>
-                </sqf:description>
-                <sqf:add node-type="element" target="alt">
-                    <xsl:processing-instruction name="oxy-placeholder">content="Insert alternate text here"</xsl:processing-instruction>
-                </sqf:add>
-            </sqf:fix>
-        </rule>
-    </pattern>
-    -->
-
-
 
     <!-- copy template -->
     <xsl:template match="node() | @*">
