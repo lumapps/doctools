@@ -20,6 +20,11 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="*" mode="process.note.restriction">
+        <div class="box box--restriction">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
     <xsl:template match="*" mode="process.note.important">
         <div class="box box--info">
