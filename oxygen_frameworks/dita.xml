@@ -8,8 +8,9 @@
         <xt:oxy_version>14.0+</xt:oxy_version>
         <xt:type>framework</xt:type>
         <xt:author/>
-        <xt:name>dita</xt:name>
-        <xt:description xmlns="http://www.w3.org/1999/xhtml"/>
+        <xt:name>LumApps Dita customization</xt:name>
+        <xt:description xmlns="http://www.w3.org/1999/xhtml">LumApps custom add-on configured to add
+            customizations including transformation scenarios and schematron rules.</xt:description>
         <xt:license>
 <![CDATA[
 
